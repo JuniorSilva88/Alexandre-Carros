@@ -1,0 +1,238 @@
+/*font import */
+ @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+ 
+/*reset css*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: "Promp" sans-serif;
+}
+
+:root {
+    --orange: #f78b00;
+    --blue: #00285f;
+    --gray:#ededed;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background: var(--blue);
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 24px;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f78b0083;
+}
+
+nav ul button {
+    border: 2px groove var(--orange);
+    border-radius: 5px;
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+nav ul button:hover {
+    transition: background, color 0.7s;
+    background: var(--orange);
+    color: white;
+}
+
+.content .header-block {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 450px;
+    background: var(--orange);
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5 );
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5 );
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5 );   
+    
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+
+.header-block img {
+    width: 45%;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+.header-block .text {
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+}
+
+.header-block .text  h2 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.5s;
+}
+
+.header-block .text p {
+    max-width: 280px;
+    color: white;
+    text-align: right;
+    transition: transform 0.6s;
+}
+
+/*Catálogo de produtos*/
+
+section.catalog {
+    width: 100vw;
+    padding: 100px;
+}
+
+section .filter-card {
+    width: 980px;
+    height: 150px;
+    background: var(--gray);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    width: 700px;
+    height: 50px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    text-indent: 10px;
+}
+
+.search-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    background: var(--orange);
+    color: var(--blue);
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.2s ease;   
+}
+
+.search-button:hover {
+    transition: background, color 0.8s;
+    border: 2px groove var(--blue);
+    background: var(--blue);
+    color: white;
+}
+
+section .card-wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 30px;
+    padding-top: 50px;
+}
+
+section .card-item {
+    height: 400px;
+    background: var(--gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-item img {
+    width: 85%;
+}
+
+.card-item h4 {
+    width: 90%;
+}
+
+.card-item p {
+    width: 90%;
+    font-style: italic;
+    color: #00000090;
+}
+
+.card-item button {
+    width: 90%;
+    padding: 15px 0px;
+    border: none;
+    background: var(--orange);
+    border-radius: 4px;
+    color: black;
+    font-weight: 1.1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.card-item button:hover {
+    background: #ededed;
+    color: var(--blue);
+    font-weight: bolder;
+}
