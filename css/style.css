@@ -177,12 +177,17 @@ section .filter-card {
     color: white;
 }
 
+.title-wrapper-catalog {
+    margin-top: 200px;
+    padding-bottom: 20px;
+}
+
 section .card-wrapper {
     max-width: 1000px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    gap: 30px;
+    grid-gap: 30px;
     padding-top: 50px;
 }
 
@@ -208,7 +213,7 @@ section .card-item {
     width: 85%;
 }
 
-.card-item h4 {
+.card-item h3 {
     width: 90%;
 }
 
@@ -225,6 +230,7 @@ section .card-item {
     background: var(--orange);
     border-radius: 4px;
     color: black;
+    font-weight: bold;
     font-weight: 1.1em;
     cursor: pointer;
     transition: 0.3s ease;
@@ -235,4 +241,23 @@ section .card-item {
     background: #ededed;
     color: var(--blue);
     font-weight: bolder;
+}
+
+/*About*/
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.about-content {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: #ededed3b;
+    margin: 0 auto;
 }
