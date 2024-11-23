@@ -3,11 +3,11 @@
  
 /*reset css*/
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-size: "Promp" sans-serif;
+    font-family: "Promp" sans-serif;
 }
 
 :root {
@@ -80,10 +80,10 @@ nav ul button {
     margin-left: 30px;
     font-weight: bold;
     color: var(--orange);
+    transition: background-color 0.5s, color 0.5s;
 }
 
 nav ul button:hover {
-    transition: background, color 0.7s;
     background: var(--orange);
     color: white;
 }
@@ -94,9 +94,7 @@ nav ul button:hover {
     height: 450px;
     background: var(--orange);
     border-radius: 8px;
-    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5 );
-    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5 );
-    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5 );   
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5 );  
     position: relative;
     z-index: 10;
     padding: 10px;
@@ -111,7 +109,7 @@ nav ul button:hover {
 
 .header-block .text {
     position: absolute;
-    bottom: 30%;
+    bottom: 50%;
     left: 15%;
 }
 
@@ -167,7 +165,7 @@ section .filter-card {
     color: var(--blue);
     cursor: pointer;
     font-size: 1.1em;
-    transition: 0.2s ease;   
+    transition: all 0.2s ease;   
 }
 
 .search-button:hover {
